@@ -1,0 +1,2378 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#"
+     xml:base="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8"
+     xmlns:cer="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#"
+     xmlns:opengalen="http://http://www.opengalen.org/owl/opengalen.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:opg="http://www.opengalen.org/owl/opengalen.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#InverseAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#InverseAttribute"/>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#InverseConstructiveAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#InverseConstructiveAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#InverseDomainAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#InverseDomainAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#InverseDomainAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#InverseAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#InverseLocativeAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#InverseLocativeAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#InverseConstructiveAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#hasCausalLinkTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#hasCausalLinkTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#InverseLocativeAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#hasConsequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#hasConsequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#hasCausalLinkTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#determinesDisability -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#determinesDisability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasAccidentMechanism -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasAccidentMechanism">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isAccidentMechanismOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCardiorespiratoryResuscitation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCardiorespiratoryResuscitation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCriterium -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCriterium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDiagnostic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDiagnostic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDrug -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDrug"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasEvaluationScale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasEvaluationScale"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumActivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumEvolutionTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumEvolutionTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumPreviousDiseases -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumPreviousDiseases"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumPreviousDrugs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumPreviousDrugs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumStimulantTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumStimulantTreatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumUnderAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumUnderAge"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumFullAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumFullAge"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumGlasgowScale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumGlasgowScale"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumHeadInjury -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumHeadInjury"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumRanchoLosAmigosScale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumRanchoLosAmigosScale"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumSequel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumSequel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasOrigin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasRange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasScale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasScale"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasStudy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasStudy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasTreatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isAccidentMechanismOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isAccidentMechanismOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isSymptomOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isSymptomOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#specifiesPathology -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#specifiesPathology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#hasContextOfCodeNamedDT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#hasContextOfCodeNamedDT"/>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#hasContextOfSchemeNamedDT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#hasContextOfSchemeNamedDT"/>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#hasMagnitudeDT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#hasMagnitudeDT"/>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#hasNumberDT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.opengalen.org/owl/opengalen.owl#hasNumberDT"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#disabilityToHeadTrauma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#disabilityToHeadTrauma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasAdmissionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasAdmissionDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasBirthdate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasBirthdate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasConsumingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasConsumingDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCriterium -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCriterium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDatePathologicalPhenomenon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDatePathologicalPhenomenon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasEpilepticActivity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasEpilepticActivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasFullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasFullName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasGender"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasMaximum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasMaximum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasMinimum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasMinimum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasOpenHeadTrauma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasOpenHeadTrauma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasPreviousDiseases -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasPreviousDiseases"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasReviewDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasReviewDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasScore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasSequels -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasSequels"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasStimulatingTreatment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasStimulatingTreatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isAprooved -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isAprooved"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#ActiveDrugChemicalIngredient -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#ActiveDrugChemicalIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Behaviour -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Behaviour">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#BiologicalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#BiologicalProcess -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#BiologicalProcess">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#SpecificProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Burn -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Burn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AffectsCerebrolicinRehabilitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#ClinicalAct -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#ClinicalAct">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#NAMEDVolitionalAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#CognitiveImpairment -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#CognitiveImpairment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AffectsCerebrolicinRehabilitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#ConvulsiveDisorder -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#ConvulsiveDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#DomainCategory -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#DomainCategory">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#TopCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#DonepezilHydrochloride -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#DonepezilHydrochloride">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#NAMEDActiveDrugIngredient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#EEGTestResult -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#EEGTestResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ParaclinicalStudy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasEpilepticActivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Erythropoietin -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Erythropoietin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Fluoxetine -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Fluoxetine">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#NAMEDActiveDrugIngredient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#HeadTrauma -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#HeadTrauma">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasOpenHeadTrauma"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#HemiplegicParalysisProcess -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#HemiplegicParalysisProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Motor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#HypotoniaOfMuscle -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#HypotoniaOfMuscle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Motor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Levodopa -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Levodopa">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#NAMEDActiveDrugIngredient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#LongBoneFracture -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#LongBoneFracture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AffectsCerebrolicinRehabilitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#MentalRetardation -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#MentalRetardation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AffectsCerebrolicinRehabilitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#MethylphenidateHydrochloride -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#MethylphenidateHydrochloride">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#NAMEDActiveDrugIngredient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Modafinil -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Modafinil">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#NAMEDActiveDrugIngredient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#NAMEDActiveDrugIngredient -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#NAMEDActiveDrugIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#ActiveDrugChemicalIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#NAMEDVolitionalAct -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#NAMEDVolitionalAct">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Behaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Phenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengalen.org/owl/opengalen.owl#hasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sequel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasAccidentMechanism"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AccidentMechanism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDatePathologicalPhenomenon"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Patient -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Human"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCardiorespiratoryResuscitation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CardiorespiratoryResuscitation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDiagnostic"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Diagnostic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumActivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEpilepticActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumPreviousDrugs"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDrugs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasExclusionCriteriumStimulantTreatment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumStimulantTreatment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumGlasgowScale"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumGlasgowScale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumRanchoLosAmigosScale"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumRanchoLosAmigosScale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasInclusionCriteriumSequel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumSequel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasStudy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ParaclinicalStudy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasTreatment"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengalen.org/owl/opengalen.owl#TreatmentAct"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasAdmissionDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasBirthdate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasFullName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasGender"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasReviewDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#PeripheralNeuropathy -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#PeripheralNeuropathy">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Phenomenon -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#DomainCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Piracetam -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Piracetam">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#NAMEDActiveDrugIngredient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Process -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Rivastigmine -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Rivastigmine">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#NAMEDActiveDrugIngredient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#Spasm -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#Spasm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Motor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#SpecificProcess -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#SpecificProcess">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#TopCategory -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#TopCategory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#TreatmentAct -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#TreatmentAct">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#ClinicalAct"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengalen.org/owl/opengalen.owl#TreatmentActwhichhasSubprocessDrugAdministration -->
+
+    <owl:Class rdf:about="http://www.opengalen.org/owl/opengalen.owl#TreatmentActwhichhasSubprocessDrugAdministration">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#TreatmentAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AccidentMechanism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AccidentMechanism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isAccidentMechanismOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasOrigin"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Origin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#disabilityToHeadTrauma"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AffectsCerebrolicinRehabilitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AffectsCerebrolicinRehabilitation">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Alertness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Alertness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sequel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AttentionDeficitDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AttentionDeficitDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Cognitive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#BallisticTrauma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#BallisticTrauma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NoIntentionalAccident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CandidatePatient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CandidatePatient">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CarAccident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CarAccident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NoIntentionalAccident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CardioPulmonaryResusitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CardioPulmonaryResusitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CardiorespiratoryResuscitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CardiorespiratoryResuscitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CardiorespiratoryResuscitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Cerebrolisin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Cerebrolisin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Citicolina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Citicolina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Cognitive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Cognitive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sequel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CognitiveCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CognitiveCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasScale"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Scale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Criterion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Criterion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isAprooved"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#DecompresiveCraniectomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#DecompresiveCraniectomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NeurosurgicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Diagnostic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Diagnostic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#specifiesPathology"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Disability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Disability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Downfall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Downfall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#IntentionalAccident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Esquirlectomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Esquirlectomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NeurosurgicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriterium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriterium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Criterion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEpilepticActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEpilepticActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEvolutionTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEvolutionTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDiseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDiseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDrugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDrugs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumStimulantTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumStimulantTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumUnderAge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumUnderAge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#External -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#External">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Origin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Galantamine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Galantamine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#GlasgowComaScale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#GlasgowComaScale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#HematomaDrainage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#HematomaDrainage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NeurosurgicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriterium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriterium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Criterion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumFullAge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumFullAge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumGlasgowScale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumGlasgowScale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumHeadInjury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumHeadInjury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumRanchoLosAmigosScale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumRanchoLosAmigosScale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumSequel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumSequel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriterium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#IntentionalAccident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#IntentionalAccident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AccidentMechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Internal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Internal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Origin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#IntubationOrotracheal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#IntubationOrotracheal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CardiorespiratoryResuscitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#determinesDisability"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Disability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasRange"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Range"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Motor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Motor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sequel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NeurosurgicalTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NeurosurgicalTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#TreatmentAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NoCandidatePatient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NoCandidatePatient">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NoIntentionalAccident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NoIntentionalAccident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AccidentMechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Origin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Origin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ParaclinicalStudy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ParaclinicalStudy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Physical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Physical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#PhysicalAggression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#PhysicalAggression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#NoIntentionalAccident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Psychiatric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Psychiatric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sequel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#RanchoLosAmigosScale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#RanchoLosAmigosScale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Range -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Range">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasMaximum"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasMinimum"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ResearchProtocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ResearchProtocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasCriterium"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Criterion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Scale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Scale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Level"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasScore"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sensitive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sensitive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sequel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sequel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sequel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasEvaluationScale"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Scale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Speech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Speech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Sequel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#SpinalCordInjury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#SpinalCordInjury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AffectsCerebrolicinRehabilitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CERPRO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasConsumingDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#TreatmentActwhichhasSubprocessDrugAdministration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#hasDrug"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#SymptomOfPathology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#SymptomOfPathology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#OPENGALEN"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ThoracicTrauma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ThoracicTrauma">
+        <rdfs:subClassOf rdf:resource="http://www.opengalen.org/owl/opengalen.owl#PathologicalPhenomenon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Patient"/>
+        <hasDiagnostic rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_Diagnostic"/>
+        <hasExclusionCriteriumActivity rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumEpilepticActivity"/>
+        <hasExclusionCriteriumPreviousDiseases rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumPrevious"/>
+        <hasExclusionCriteriumPreviousDrugs rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumDrugs"/>
+        <hasInclusionCriteriumGlasgowScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumGlasgow"/>
+        <hasInclusionCriteriumRanchoLosAmigosScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumRancho"/>
+        <hasInclusionCriteriumSequel rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumSequel"/>
+        <hasStudy rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_EEGTestResult"/>
+        <hasTreatment rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_HematomaDrainage"/>
+        <hasAdmissionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-15T13:00:00</hasAdmissionDate>
+        <hasBirthdate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1988-06-27T14:12:00</hasBirthdate>
+        <hasFullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan Hernández</hasFullName>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasReviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-23T13:00:00</hasReviewDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_AttentionDeficitDisorder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_AttentionDeficitDisorder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AttentionDeficitDisorder"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_GlasgowComaScale"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_RanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CarAccident -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CarAccident">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CarAccident"/>
+        <isAccidentMechanismOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_opht-LongBoneFracture"/>
+        <disabilityToHeadTrauma rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</disabilityToHeadTrauma>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manejaba en estado de hebriedad cuando se choco contra un poste</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_Condition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_Condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_GlasgowComaScale"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_RanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumDrugs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumDrugs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDrugs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumEpilepticActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumEpilepticActivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEpilepticActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumGlasgow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumGlasgow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumGlasgowScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumPrevious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumPrevious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumRancho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumRancho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumRanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumSequel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CriteriumSequel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumSequel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_Diagnostic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_Diagnostic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Diagnostic"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_Condition"/>
+        <specifiesPathology rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_HT"/>
+        <specifiesPathology rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_opht-LongBoneFracture"/>
+        <hasPreviousDiseases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasPreviousDiseases>
+        <hasSequels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasSequels>
+        <hasStimulatingTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasStimulatingTreatment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_EEGTestResult -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_EEGTestResult">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#EEGTestResult"/>
+        <hasEpilepticActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasEpilepticActivity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_GlasgowComaScale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_GlasgowComaScale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#GlasgowComaScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_HT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_HT">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#HeadTrauma"/>
+        <opg:hasConsequence rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_AttentionDeficitDisorder"/>
+        <hasAccidentMechanism rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_CarAccident"/>
+        <hasDatePathologicalPhenomenon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-14T14:20:00</hasDatePathologicalPhenomenon>
+        <hasOpenHeadTrauma rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasOpenHeadTrauma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_HematomaDrainage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_HematomaDrainage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#HematomaDrainage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_RanchoLosAmigosScale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_RanchoLosAmigosScale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#RanchoLosAmigosScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_opht-LongBoneFracture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P1_opht-LongBoneFracture">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#LongBoneFracture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Patient"/>
+        <hasCardiorespiratoryResuscitation rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CPR"/>
+        <hasDiagnostic rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_Diagnostic"/>
+        <hasExclusionCriteriumActivity rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumEpilepticActivity"/>
+        <hasExclusionCriteriumPreviousDiseases rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumPrevious"/>
+        <hasExclusionCriteriumPreviousDrugs rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumDrugs"/>
+        <hasInclusionCriteriumGlasgowScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumGlasgow"/>
+        <hasInclusionCriteriumRanchoLosAmigosScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumRancho"/>
+        <hasInclusionCriteriumSequel rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumSequels"/>
+        <hasStudy rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_EEGTestResult"/>
+        <hasTreatment rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_DecompresiveCraniectomy"/>
+        <hasTreatment rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_StimulatingTreatment"/>
+        <hasAdmissionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-15T13:00:00</hasAdmissionDate>
+        <hasBirthdate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-03-16T00:15:24</hasBirthdate>
+        <hasFullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valeriana Zepellin</hasFullName>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+        <hasReviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-23T13:00:00</hasReviewDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CPR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CPR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CardioPulmonaryResusitation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_Condition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_Condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_GlasgowComaScale"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_RanchoLosAmigos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumDrugs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumDrugs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDrugs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumEpilepticActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumEpilepticActivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEpilepticActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumGlasgow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumGlasgow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumGlasgowScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumPrevious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumPrevious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumRancho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumRancho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumRanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumSequels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_CriteriumSequels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumSequel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_DecompresiveCraniectomy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_DecompresiveCraniectomy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#DecompresiveCraniectomy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_Diagnostic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_Diagnostic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Diagnostic"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_Condition"/>
+        <specifiesPathology rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_HeadTrauma"/>
+        <hasPreviousDiseases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasPreviousDiseases>
+        <hasSequels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasSequels>
+        <hasStimulatingTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasStimulatingTreatment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_EEGTestResult -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_EEGTestResult">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#EEGTestResult"/>
+        <hasEpilepticActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasEpilepticActivity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_GlasgowComaScale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_GlasgowComaScale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#GlasgowComaScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_HeadTrauma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_HeadTrauma">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#HeadTrauma"/>
+        <opg:hasConsequence rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_HemiplegicParalysisProcess"/>
+        <hasAccidentMechanism rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_PhysicalAggression"/>
+        <hasDatePathologicalPhenomenon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-05T13:15:00</hasDatePathologicalPhenomenon>
+        <hasOpenHeadTrauma rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasOpenHeadTrauma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_HemiplegicParalysisProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_HemiplegicParalysisProcess">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#HemiplegicParalysisProcess"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_GlasgowComaScale"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_RanchoLosAmigos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_Modafinil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_Modafinil">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Modafinil"/>
+        <hasConsumingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-16T18:12:00</hasConsumingDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_PhysicalAggression -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_PhysicalAggression">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#PhysicalAggression"/>
+        <disabilityToHeadTrauma rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</disabilityToHeadTrauma>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fue asaltado y golpeado por los maleantes, recibiendo multiples golpes en la cabeza.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_RanchoLosAmigos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_RanchoLosAmigos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#RanchoLosAmigosScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_StimulatingTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_StimulatingTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingTreatment"/>
+        <hasDrug rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P2_Modafinil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Patient"/>
+        <hasDiagnostic rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_Diagnostic"/>
+        <hasExclusionCriteriumActivity rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumActivity"/>
+        <hasExclusionCriteriumPreviousDiseases rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumPrevious"/>
+        <hasExclusionCriteriumPreviousDrugs rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumDrugs"/>
+        <hasInclusionCriteriumGlasgowScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumGlasgow"/>
+        <hasInclusionCriteriumRanchoLosAmigosScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumRancho"/>
+        <hasInclusionCriteriumSequel rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumSequels"/>
+        <hasStudy rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_EEGTestResult"/>
+        <hasAdmissionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-15T13:00:00</hasAdmissionDate>
+        <hasBirthdate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-05-26T02:15:24</hasBirthdate>
+        <hasFullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marie Curie</hasFullName>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+        <hasReviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-23T13:00:00</hasReviewDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_Condition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_Condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_GlasgowComaScale"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_RanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumActivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEpilepticActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumDrugs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumDrugs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDrugs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumGlasgow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumGlasgow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumGlasgowScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumPrevious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumPrevious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumRancho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumRancho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumRanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumSequels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_CriteriumSequels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumSequel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_Diagnostic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_Diagnostic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Diagnostic"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_Condition"/>
+        <specifiesPathology rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_HeadTrauma"/>
+        <specifiesPathology rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_opht-LongBoneFracture"/>
+        <hasPreviousDiseases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasPreviousDiseases>
+        <hasSequels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasSequels>
+        <hasStimulatingTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasStimulatingTreatment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_Downfall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_Downfall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Downfall"/>
+        <isAccidentMechanismOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_opht-LongBoneFracture"/>
+        <disabilityToHeadTrauma rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</disabilityToHeadTrauma>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resvalo del primer piso de su casa</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_EEGTestResult -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_EEGTestResult">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#EEGTestResult"/>
+        <hasEpilepticActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasEpilepticActivity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_GlasgowComaScale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_GlasgowComaScale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#GlasgowComaScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_HeadTrauma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_HeadTrauma">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#HeadTrauma"/>
+        <opg:hasConsequence rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_HypotoniaOfMuscle"/>
+        <hasAccidentMechanism rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_Downfall"/>
+        <hasDatePathologicalPhenomenon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-05T13:15:00</hasDatePathologicalPhenomenon>
+        <hasOpenHeadTrauma rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasOpenHeadTrauma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_HypotoniaOfMuscle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_HypotoniaOfMuscle">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#HypotoniaOfMuscle"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_GlasgowComaScale"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_RanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_RanchoLosAmigosScale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_RanchoLosAmigosScale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#RanchoLosAmigosScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_opht-LongBoneFracture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P3_opht-LongBoneFracture">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#LongBoneFracture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Patient"/>
+        <hasCardiorespiratoryResuscitation rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_IntubationOrotraqueal"/>
+        <hasDiagnostic rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Diagnostic"/>
+        <hasExclusionCriteriumActivity rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumActivity"/>
+        <hasExclusionCriteriumPreviousDiseases rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumPrevious"/>
+        <hasExclusionCriteriumPreviousDrugs rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumDrugs"/>
+        <hasInclusionCriteriumGlasgowScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumGlasgow"/>
+        <hasInclusionCriteriumRanchoLosAmigosScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumRancho"/>
+        <hasInclusionCriteriumSequel rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumSequels"/>
+        <hasStudy rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_EEGTestResult"/>
+        <hasTreatment rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Esquirlectomy"/>
+        <hasTreatment rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_StimulatingTreatment"/>
+        <hasAdmissionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-15T13:00:00</hasAdmissionDate>
+        <hasBirthdate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1992-11-16T00:15:24</hasBirthdate>
+        <hasFullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Julian Alvarado</hasFullName>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasReviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-23T13:00:00</hasReviewDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_BallisticTrauma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_BallisticTrauma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#BallisticTrauma"/>
+        <isAccidentMechanismOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_opht-ThoracicTrauma"/>
+        <disabilityToHeadTrauma rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</disabilityToHeadTrauma>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Una bala perdida le atravesó la cabeza.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Condition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_GlasgowComaScale"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_RanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumActivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEpilepticActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumDrugs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumDrugs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDrugs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumGlasgow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumGlasgow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumGlasgowScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumPrevious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumPrevious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumRancho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumRancho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumRanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumSequels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_CriteriumSequels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumSequel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Diagnostic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Diagnostic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Diagnostic"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Condition"/>
+        <specifiesPathology rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_HeadTrauma"/>
+        <specifiesPathology rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_opht-ThoracicTrauma"/>
+        <hasPreviousDiseases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasPreviousDiseases>
+        <hasSequels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasSequels>
+        <hasStimulatingTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasStimulatingTreatment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_EEGTestResult -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_EEGTestResult">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#EEGTestResult"/>
+        <hasEpilepticActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasEpilepticActivity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Esquirlectomy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Esquirlectomy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Esquirlectomy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_GlasgowComaScale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_GlasgowComaScale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#GlasgowComaScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_HeadTrauma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_HeadTrauma">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#HeadTrauma"/>
+        <opg:hasConsequence rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Spasm"/>
+        <hasAccidentMechanism rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_BallisticTrauma"/>
+        <hasDatePathologicalPhenomenon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-05T13:15:00</hasDatePathologicalPhenomenon>
+        <hasOpenHeadTrauma rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasOpenHeadTrauma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_IntubationOrotraqueal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_IntubationOrotraqueal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#IntubationOrotracheal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_MethylphenidateHydrochloride -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_MethylphenidateHydrochloride">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#MethylphenidateHydrochloride"/>
+        <hasConsumingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-15T17:05:00</hasConsumingDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_RanchoLosAmigosScale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_RanchoLosAmigosScale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#RanchoLosAmigosScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Spasm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_Spasm">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Spasm"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_GlasgowComaScale"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_RanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_StimulatingTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_StimulatingTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#StimulatingTreatment"/>
+        <hasDrug rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_MethylphenidateHydrochloride"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_opht-ThoracicTrauma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P4_opht-ThoracicTrauma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ThoracicTrauma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#Patient"/>
+        <hasDiagnostic rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_diagnostic"/>
+        <hasExclusionCriteriumActivity rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumActivity"/>
+        <hasExclusionCriteriumPreviousDiseases rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumPrevious"/>
+        <hasExclusionCriteriumPreviousDrugs rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumDrugs"/>
+        <hasInclusionCriteriumGlasgowScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumGlasgow"/>
+        <hasInclusionCriteriumRanchoLosAmigosScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumRancho"/>
+        <hasInclusionCriteriumSequel rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumSequels"/>
+        <hasStudy rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_EEGTestResult"/>
+        <hasAdmissionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-15T13:00:00</hasAdmissionDate>
+        <hasBirthdate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1992-04-23T13:00:00</hasBirthdate>
+        <hasFullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto Santos</hasFullName>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasReviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-23T13:00:00</hasReviewDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_AttentionDeficitDisorder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_AttentionDeficitDisorder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#AttentionDeficitDisorder"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_GCS"/>
+        <hasEvaluationScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_RLAS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_Condition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_Condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Condition"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_GCS"/>
+        <hasScale rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_RLAS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumActivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumEpilepticActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumDrugs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumDrugs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDrugs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumGlasgow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumGlasgow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumGlasgowScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumPrevious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumPrevious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#ExclusionCriteriumPreviousDiseases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumRancho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumRancho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumRanchoLosAmigosScale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumSequels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_CriteriumSequels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#InclusionCriteriumSequel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_Dowfall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_Dowfall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Downfall"/>
+        <isAccidentMechanismOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_convulsiveDisorder1"/>
+        <isAccidentMechanismOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_convulsiveDisorder2"/>
+        <isAccidentMechanismOf rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_convulsiveDisorder3"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caida de segundo piso de una casa</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_EEGTestResult -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_EEGTestResult">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#EEGTestResult"/>
+        <hasEpilepticActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasEpilepticActivity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_GCS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_GCS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#GlasgowComaScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_MentalRetardation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_MentalRetardation">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#MentalRetardation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_RLAS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_RLAS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#RanchoLosAmigosScale"/>
+        <hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_convulsiveDisorder1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_convulsiveDisorder1">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#ConvulsiveDisorder"/>
+        <hasDatePathologicalPhenomenon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-27T17:24:00</hasDatePathologicalPhenomenon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_convulsiveDisorder2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_convulsiveDisorder2">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#ConvulsiveDisorder"/>
+        <hasDatePathologicalPhenomenon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-27T22:17:00</hasDatePathologicalPhenomenon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_convulsiveDisorder3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_convulsiveDisorder3">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#ConvulsiveDisorder"/>
+        <hasDatePathologicalPhenomenon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-27T09:24:00</hasDatePathologicalPhenomenon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_diagnostic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_diagnostic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#Diagnostic"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_Condition"/>
+        <specifiesPathology rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_MentalRetardation"/>
+        <specifiesPathology rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_headTrauma"/>
+        <hasPreviousDiseases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasPreviousDiseases>
+        <hasSequels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasSequels>
+        <hasStimulatingTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasStimulatingTreatment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_headTrauma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_headTrauma">
+        <rdf:type rdf:resource="http://www.opengalen.org/owl/opengalen.owl#HeadTrauma"/>
+        <opg:hasConsequence rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_AttentionDeficitDisorder"/>
+        <hasAccidentMechanism rdf:resource="http://www.semanticweb.org/edma/liim/2017/CERPRO-OpenGALEN8#CP_P5_Dowfall"/>
+        <hasDatePathologicalPhenomenon rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-27T12:24:00</hasDatePathologicalPhenomenon>
+        <hasOpenHeadTrauma rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasOpenHeadTrauma>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
