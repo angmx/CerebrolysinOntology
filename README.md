@@ -1,4 +1,4 @@
-# CerebrolysinOntology
+# Medical Diagnosis Support Ontology: CERPRO
 CErebrolysin Research PRotocol Ontology (CERPRO) for supporting medical diagnosis through knowledge inference.
 The aim is to: 
 1) assist the first-contact hospital’s general physician during the patient evaluation to obtain a close diagnosis and to determine the candidates for receiving the Cerebrolysin treatment (CRP Protocol).
